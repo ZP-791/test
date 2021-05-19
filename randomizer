@@ -1,0 +1,16 @@
+import random
+
+players = list(range(1, 11))
+random.shuffle(players)
+ 
+mafia = [players.pop() for _ in range(2)]
+doctor = players.pop()
+sheriff = players.pop()
+don = players.pop()
+mirniy = players
+ 
+print('Дон мафии:', don)
+print("Мафия:", *mafia)
+print("Доктор:", doctor)
+print("Комиссар:", sheriff)
+print("Мирные жители:", *mirniy)
